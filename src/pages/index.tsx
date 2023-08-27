@@ -1,6 +1,5 @@
 import Dashboard from './dashboard/Dashboard'
-import SideMenu from '../components/SideMenu/SideMenu'
-import { useSession, signIn, signOut } from "next-auth/react"
+import { useSession } from "next-auth/react"
 import Login from '@/components/Login/Login'
 import scss from './home.module.scss'
 import React from 'react'

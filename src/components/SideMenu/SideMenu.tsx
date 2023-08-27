@@ -18,6 +18,7 @@ import EqualizerIcon from '@mui/icons-material/Equalizer'
 import scss from './SideMenu.module.scss'
 import NextLink from 'next/link'
 import { signOut } from 'next-auth/react'
+import HomeIcon from '@mui/icons-material/Home'
 
 const drawerWidth = 240
 
@@ -42,9 +43,10 @@ const closedMixin = (theme: Theme): CSSObject => ({
 	},
 })
 
-const menuRouteList = ['analytics', 'profile', 'settings', '']
-const menuListTranslations = ['Analytics', 'Profile', 'Settings', 'Sign Out']
+const menuRouteList = ['', 'analytics', 'profile', 'settings', '']
+const menuListTranslations = ['Home', 'Analytics', 'Profile', 'Settings', 'Sign Out']
 const menuListIcons = [
+  <HomeIcon key={0} />,
 	<EqualizerIcon key={1} />,
 	<Person2Icon key={2} />,
 	<Settings key={3} />,
