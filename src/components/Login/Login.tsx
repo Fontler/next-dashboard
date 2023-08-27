@@ -9,7 +9,6 @@ export default function Login() {
     </>
   }
   return <>
-    <h2>Please sign in</h2><br/>
     <Button variant={'contained'} color={'success'} onClick={() => signIn()}>Sign in</Button>
   </>
 }
