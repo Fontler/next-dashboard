@@ -117,7 +117,7 @@ export default function Header(props: HeaderProps) {
               onClose={handleCloseUserMenu}
             >
             <MenuItem onClick={() => session ? signOut() : signIn()}>
-              <Typography textAlign="center">{session ? 'Hamrénut' : 'Login'}</Typography>
+              <Typography textAlign="center">{session ? 'Sign out' : 'Sign in'}</Typography>
             </MenuItem>
             </Menu>
           </Box>

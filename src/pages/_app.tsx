@@ -26,14 +26,14 @@ export default function App({ Component, pageProps }: AppProps) {
             createTheme({
                 ...darkTheme
             }),
-        [mode],
+        [],
     )
     const lightThemeChosen = React.useMemo(
         () =>
             createTheme({
                 ...lightTheme,
             }),
-        [mode],
+        [],
     )
 
 	return (
